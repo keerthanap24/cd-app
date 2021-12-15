@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PLAYER MODE</title>
+    <link href="App.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <nav>
+      <img src="index-photos/logohead.PNG">
+      <div class="buttons">
+        <button onClick = "location.href='App.js'"class="1" style = "background-color: MediumSeaGreen;">HOME</button>
+        <button onClick = "location.href='log-in.html'"class="2" style = "background-color: MediumSeaGreen;">LOG-IN </button>
+        <button onClick = "location.href='player-mode.html'"class="2" style = "background-color: MediumSeaGreen;">PLAYER MODE </button>
+        <!-- <button onClick = "ChallengeMode()"class="3">CHALLENGE MODE</button> -->
+      </div>
+    </nav>
+<html lang="en">
+  <head>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        /**var id_token = googleUser.getAuthResponse()."876227125606-ou73mpvc3k00thc5d5gbt056q03o3vpa.apps.googleusercontent.com";**/
+        console.log("ID Token: " + id_token);
+      }
+    </script>
+  </body>
+</html>
