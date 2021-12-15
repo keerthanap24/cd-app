@@ -14,19 +14,19 @@ function App() {
   </head>
   <body>
     <nav>
-      <img src="index-photos/logohead.PNG"/>
+      <img src="index-photos/logohead.PNG" alt="logo"/>
         <button title = "HOME" onClick={"App.js"} class="2" style = "background-color: MediumSeaGreen;"></button>
         <button title = "LOG-IN" onClick={"log-in.html"} class="2" style = "background-color: MediumSeaGreen;"></button>
-        <button title = "PLAYER MODE" onClick={"player-mode.html"} class="2" style = "background-color: MediumSeaGreen;"></button>
+        <button title = "PLAYER MODE" onClick={"player-mode.html"} class="2" style = "background-color: MediumSeaGreen;"></button> 
     </nav>
     <header class="header">
-      <img src="index-photos/head.png"/>
+      <img src="index-photos/head.png" alt="title background"/>
       <h1>Capitol Discovery</h1>
     </header>
     <div class="content"/>
       <div class="info-grid">
         <div class="box1">
-          <img src="index-photos/binnoculars.png"/>
+          <img src="index-photos/binnoculars.png" alt="binnoculars"/>
           <p>With "PLAYER MODE" Users will complete challenges that appear on a dashboard for points and will placed on a leaderboard
 .</p>
 
@@ -43,7 +43,7 @@ function App() {
           <p>Capitol Discovery,  caters to native residents, newcomers, and tourists that live in or visit Washington, D.C. You will have the chance to learn more about the historic environment and atmosphere surrounding you in the United State's Capitol relating to Black culture!  Play to learn more about monumental Black historic landmarks, buildings, artwork, Black owned businesses, and much more in the form of a scavenger hunt! 
 . </p>
         </div>
-        <img src="index-photos/african american museum.webp" class="box5"/>
+        <img src="index-photos/african american museum.webp" alt="meseum" class="box5"/>
       </div>
     </div>
     <footer class="bottom-footer">
