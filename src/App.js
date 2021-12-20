@@ -7,17 +7,17 @@ import LogoutHooks from './elements/logouthooks';
 
 function App() {
   return (
+    <>
     <div className="App">
       <head>
     <title>CAPITOL DISOVERY</title>
     <link href="App.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="Refresh" content="0; url= https://capitol-discovery-web-app.kynjonez.repl.co "/> 
   </head>
   <body>
     <nav>
       <img src="index-photos/logohead.PNG" alt="logo"/>
-        <button title = "HOME" onClick={"App.js"} class="2" style = "background-color: MediumSeaGreen;"></button>
-        <button title = "LOG-IN" onClick={"log-in.html"} class="2" style = "background-color: MediumSeaGreen;"></button>
-        <button title = "PLAYER MODE" onClick={"player-mode.html"} class="2" style = "background-color: MediumSeaGreen;"></button> 
+        
     </nav>
     <header class="header">
       <img src="index-photos/head.png" alt="title background"/>
@@ -56,6 +56,7 @@ function App() {
 </script>
   </body>
     </div>
+</>
   );
 }
 
